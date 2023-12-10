@@ -1,5 +1,5 @@
-import Portfolio from './components/Portfolio'
-import './App.css'
+import Portfolio from './components/Portfolio';
+import './App.css';
 
 function App() {
 
@@ -10,4 +10,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
