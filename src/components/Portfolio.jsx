@@ -8,17 +8,17 @@ const Portfolio = () => {
   const [date, setDate] = useState(projects);
 
   const projectFilter = (selected) => {
-    setState(selected.target.textContent);
+    setState(selected);
 
     const dataFilter = projects.filter((e) => {
-      if(e.category === selected.target.textContent) {
+      if(e.category === selected) {
         return e
       }
     });
 
     setDate(dataFilter);
 
-    if(selected.target.textContent === 'All') {
+    if(selected === 'All') {
       setDate(projects);
     }
   }
