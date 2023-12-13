@@ -10,11 +10,7 @@ const Portfolio = () => {
   const projectFilter = (selected) => {
     setState(selected);
 
-    const dataFilter = projects.filter((e) => {
-      if(e.category === selected) {
-        return e
-      }
-    });
+    const dataFilter = projects.filter((e) => e.category === selected);
 
     setDate(dataFilter);
 
